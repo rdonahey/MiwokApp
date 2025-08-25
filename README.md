@@ -1,0 +1,1 @@
+This NewOutput.html is provides example deflection calculations for prestressed concrete double tee. It includes equations and figures, and I am using it as a base model to be enhanced with interactive features.
