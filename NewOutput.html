@@ -342,6 +342,386 @@ class="math inline">\({}_{ps}\)</span></em> x <em>f<span
 class="math inline">\({}_{se}\)</span></em> = 1.836 x 162.0 = 297.4
 kip</p>
 </div>
+
+<button type="button" class="collapsible">Show/Hide: Concrete design properties</button>
+<div class="content">
+<p><strong>Concrete design properties</strong></p>
+<p>The concrete has a specified compressive strength <span
+class="math inline">\(f&#39;_c=5000\)</span> psi, giving <span
+class="math inline">\(f_r=7.5\sqrt{f_c&#39;}=7.5\sqrt{5000}=530\)</span>
+psi and <span
+class="math inline">\(E_c=33{w_c}^{1.5}\sqrt{f_c&#39;}=33{\left(145\right)}^{1.5}\sqrt{5000}/1000=4074\)</span>
+ksi. Using <em>w<span class="math inline">\({}_{c}\)</span></em> = 145
+pcf for normalweight concrete gives <span
+class="math inline">\(E_c\approx 57,000\sqrt{f_c&#39;}\)</span>. The
+modular ratio <span
+class="math inline">\(n_p=E_p/E_c=28,500/4074=7.0\)</span> (assuming
+<em>E<span class="math inline">\({}_{p}\)</span></em> = 28,500 ksi).</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Member loads</button>
+<div class="content">
+<p><strong>Member loads</strong></p>
+<p>member self-weight <em>w<span
+class="math inline">\({}_{sw}\)</span></em> = 418 lb/ft (from beam gross
+section properties)</p>
+<p>superimposed dead load <em>w<span
+class="math inline">\({}_{sd}\)</span></em> = 10 lb/ft<span
+class="math inline">\({}^{2}\)</span> x 8 ft = 80 lb/ft</p>
+<p>total dead load <em>w<span class="math inline">\({}_{D}\)</span></em>
+= 418 + 80 = 498 lb/ft</p>
+<p>live load <em>w<span class="math inline">\({}_{L}\)</span></em> = 35
+lb/ft<span class="math inline">\({}^{2}\)</span> x 8 ft = 280 lb/ft</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Service load moments</button>
+<div class="content">
+<p><strong>Service load moments</strong></p>
+<p>The critical moment occurs at midspan (<span class="math inline">\(\ell
+/2\)</span>) for beams with straight strands
+of constant eccentricity and is assumed to occur at <span
+class="math inline">\(0.4\ell\)</span> for beams when the strands are
+depressed at midspan<span class="math inline">\({}^{\ }\)</span>as with
+this example.<span class="math inline">\({}^{12}\)</span> For the
+prestressed beam in this example, the actual critical section occurs at
+<span class="math inline">\(0.39\ell\)</span> for the maximum value of
+total bottom stress <em>f<span
+class="math inline">\({}_{b}\)</span></em> in the concrete at the
+precompressed tension face, and at <span
+class="math inline">\(0.384\ell\)</span> for the maximum value of
+<em>M/M<span class="math inline">\({}_{cr}\)</span></em> (details are
+provided further on in Aside 1). Figure A2 plots the distribution of
+<em>f<span class="math inline">\({}_{b}\)</span><span
+class="math inline">\({}_{\ }\)</span>/f<span
+class="math inline">\({}_{r}\)</span></em> and <em>M/M<span
+class="math inline">\({}_{cr}\)</span></em> along the member span.
+Negative values of the bottom stress for <em>f<span
+class="math inline">\({}_{b}\)</span></em> (indicating compression) that
+occur in the region near the end support are not plotted in this
+figure.</p>
+<p>Service load moments at midspan (<span class="math inline">\(\ell
+/2\)</span>) are as follows:</p>
+<p><span class="math inline">\(M_D\left(\ell /2\right)=w_D{\ell
+}^2/8=498\div 12\div 1000\times {\left(70\times
+12\right)}^2/8=3660.3\)</span> kip-in.</p>
+<p><span class="math inline">\(M_L\left(\ell /2\right)=w_L{\ell
+}^2/8=280\div 12\div 1000\times {\left(70\times
+12\right)}^2/8=2058.0\)</span> kip-in.</p>
+<p><span class="math inline">\(M_a=M_{D+L}\left(\ell
+/2\right)=M_D\left(\ell /2\right)+M_L\left(\ell
+/2\right)=5718.3\)</span> kip-in.</p>
+<p>Service load moments at the critical section (<span
+class="math inline">\(0.4\ell\)</span>) are equal to 0.96 times the
+moment at midspan based on a parabolic distribution of moment from the
+uniformly distributed loads.</p>
+<p><span class="math inline">\(M_D(0.4\ell )=0.96M_D(0.5\ell
+)=0.96\times 3660.3=3513.9\)</span> kip-in.</p>
+<p><span class="math inline">\(M_L(0.4\ell )=0.96M_L(0.5\ell
+)=0.96\times 2058.0=1975.7\)</span> kip-in.</p>
+<p><span class="math inline">\(M\left(0.4\ell
+\right)=M_{D+L}\left(0.4\ell \right)=0.96M_a=0.96\times
+5718.3=5489.\mathrm{6}\)</span> kip-in.</p>
+<p>where <span class="math inline">\(M_a\)</span> is the total dead plus
+live load moment at midspan (<span
+class="math inline">\(0.5\ell\)</span>).</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Critical section properties (at 0.4l)</button>
+<div class="content">
+<p><strong>Critical section properties (at 0.4l)</strong></p>
+<p>When deflection is computed directly, a constant value of member
+stiffness <em>EI</em> and eccentricity <em>e</em> of the prestressing
+force is assumed based on the effective moment of inertia <em>I<span
+class="math inline">\({}_{e}\)</span></em> and effective eccentricity
+<em>e<span class="math inline">\({}_{e}\)</span></em> at the critical
+section located at <span class="math inline">\(0.4\ell\)</span>. The
+section is cracked at <span class="math inline">\(0.4\ell\)</span>, but
+barely cracked at midspan (<span class="math inline">\(0.5\ell\)</span>)
+as observed from Fig. A2.</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Curvatures at the critical section</button>
+<div class="content">
+<p><strong>Curvatures at the critical section</strong></p>
+<p>Corresponding curvatures at the critical section (<span
+class="math inline">\(0.4\ell\)</span>) are computed using guidance from
+Fig. A3 that summarizes the relevant equations for curvature needed to
+calculate deflection. Values for the section properties and curvatures
+are summarized in Table A1 for convenience. <span
+class="math display">\[\phi \left(0.4\ell \mathrm{\
+}\right)=\frac{M\left(0.4\ell \mathrm{\ }\right)-P_ee_e(0.4\ell
+\mathrm{\ })}{E_cI_e(0.4\ell \mathrm{\ })}=\frac{5489.6-297.4\times
+11.30}{4074\times 14,436}=36.20\times {10}^{-6}\ 1/\mathrm{in.}\]</span>
+<span class="math display">\[{\phi }_{p,g}\left(0.4\ell \mathrm{\
+}\right)=\frac{P_ee_g(0.4\ell )}{E_cI_g}=\frac{297.4\times
+12.216}{4074\times 20,985}=42.495\times {10}^{-6}\
+1/\mathrm{in.}\]</span> <span class="math display">\[{\phi
+}_{net}\left(0.4\ell \mathrm{\ }\right)=\phi \left(0.4\ell \right)+{\phi
+}_{p,g}\left(0.4\ell \right)=\left(36.20+42.495\right)\times
+{10}^{-6}=78.695\times {10}^{-6}\ 1/\mathrm{in.}\]</span> <span
+class="math display">\[{\phi }_D\left(0.4\ell \mathrm{\
+}\right)=\frac{M_D\left(0.4\ell \mathrm{\
+}\right)}{E_cI_g}=\frac{3513.9}{4074\times 20,985}=41.10\times
+{10}^{-6}\ 1/\mathrm{in.}\]</span> <span class="math display">\[{\phi
+}_L\left(0.4\ell \right)={\phi }_{net}\left(0.4\ell \mathrm{\
+}\right)-{\phi }_D\left(0.4\ell \mathrm{\
+}\right)=\left(78.695-41.10\right)\times {10}^{-6}=37.595\times
+{10}^{-6}\ 1/\mathrm{in.}\]</span> </p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Curvature plots</button>
+<div class="content">
+<p><strong>Curvature plots</strong></p>
+<p>Plots of the distribution for curvature are shown in Fig. A4 for the
+prestressing force, <span class="math inline">\({\phi
+}_{p,g}(x)\)</span>, the dead load plus prestressing force, <span
+class="math inline">\({\phi }_{p+D}(x)\)</span>, the total (dead and
+live) load plus prestressing force, <span class="math inline">\(\phi
+(x)\)</span>, and for <span class="math inline">\(\phi (x)\)</span>
+assuming a parabolic distribution of the net curvature <span
+class="math inline">\({\phi }_{net}\left(x\right)\)</span> from Fig. A5.
+Notice the curious kink that occurs in the curves near midspan for <span
+class="math inline">\({\phi }_{p+D}(x)\)</span> and <span
+class="math inline">\(\phi (x)\)</span> as <span
+class="math inline">\({\phi }_{p,g}\)</span> increases towards midspan
+of the beam. Loss of prestress in the bond transfer length at the beam
+ends is neglected.</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Parabolic approximation for net curvature</button>
+<div class="content">
+<p><strong>Parabolic approximation for net curvature</strong></p>
+<p>Assuming a parabolic curve for the net curvature <span
+class="math inline">\({\phi }_{net}\)</span> running through the value
+at <span class="math inline">\(0.4\ell\)</span> and having a maximum
+value at midspan (<span class="math inline">\(0.5\ell\)</span>) as shown
+in Fig. A5 gives <span class="math display">\[{\phi }_{net}\left(0.5\ell
+\mathrm{\ }\right)\approx {\phi }_{net}\left(0.4\ell \mathrm{\
+}\right)/0.96=(78.695/0.96)\times {10}^{-6}\ 1/\mathrm{in.=81.97}\times
+{10}^{-6}\ 1/\mathrm{in.}\]</span> In a similar fashion, a parabolic
+curve fitted to the curvature value from live load at <span
+class="math inline">\(0.4\ell\)</span> gives <span
+class="math display">\[{\phi }_L\left(0.5\ell \mathrm{\ }\right)\approx
+{\phi }_L\left(0.4\ell \mathrm{\ }\right)/0.96=37.595\times
+{10}^{-6}/0.96=39.16\times {10}^{-6}\ 1/\mathrm{in.}\]</span>
+<strong></strong></p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Deflections based on net curvature using parabolic approximation</button>
+<div class="content">
+<p><strong>Deflections based on net curvature using parabolic approximation</strong></p>
+<p>Knowing that <span class="math inline">\(K_M=5/48\)</span> when the
+curvature is parabolic, gives <span class="math display">\[{\Delta
+}_{i,L}=K_M{\phi }_L\left(0.5\ell \mathrm{\ }\right){\ell
+}^2=\frac{5}{48}\times 39.16\times {10}^{-6}\times {(70\times
+12)}^2=2.88\ \mathrm{in.}\]</span> and is about 20% greater than the
+value of <span class="math inline">\({\Delta }_{i,L}=2.39\
+\mathrm{in.}\)</span> when curvature is integrated. Integration takes
+account of the uncracked regions of the beam (using <span
+class="math inline">\(e_g(x)\)</span> and <span
+class="math inline">\(I_g\)</span>) as well as for changes in <span
+class="math inline">\(e_e(x)\)</span> and <span
+class="math inline">\(I_e(x)\)</span> in the cracked regions. Figures A2
+and A4 indicate the beam is cracked near the midspan region for <span
+class="math inline">\(0.277\lt x/\ell \lt 0.723\)</span>).
+Alternatively, <span class="math display">\[{\Delta
+}_{net}=\frac{5}{48}{\phi }_{net}\left(0.5\ell \mathrm{\ }\right){\ell
+}^2=\frac{5}{48}\times 81.97\times {10}^{-6}\times {(70\times
+12)}^2=6.025\ \mathrm{in.}\]</span> <img src="image11.png"
+style="width:3.88in;height:3.71in" alt="image" /></p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Alternative trapezoidal approximation for net curvature and deflection calculations</button>
+<div class="content">
+<p><strong>Alternative trapezoidal approximation for net curvature and
+deflection calculations</strong></p>
+<p>Estimating deflection by approximating the net curvature with a
+trapezoidal curve as shown in Fig. A6 (corresponding to the shape for an
+elastic beam under two-point loading assuming the loading points are
+located at <span class="math inline">\(0.4\ell\)</span> from each
+support), gives <span class="math display">\[{\Delta }_{net}=K_M{\phi
+}_{net}\left(0.4\ell \mathrm{\ }\right){\ell }^2=0.0983\times
+78.695\times {10}^{-6}\times {(70\times 12)}^2=5.46\
+\mathrm{in.}\]</span> <span class="math display">\[{\mathrm{where}\
+K}_M=\left[3-4{\left(\frac{a}{\ell
+}\right)}^2\right]/24=\left[3-4{\left(0.4\right)}^2\right]/24=4.72/48=0.0983\]</span>
+<span class="math display">\[{\Delta }_{i,L}={\Delta }_{net}-{\Delta
+}_{i,D}=5.46-3.15=2.31\ \mathrm{in.}\]</span> <span
+class="math display">\[{\Delta }_a={\Delta }_{net}-{\Delta
+}_{p,g}=5.46-3.40=2.06\ \mathrm{in.}\]</span> These estimated values of
+2.31 in. for <span class="math inline">\({\Delta }_{i,L}\)</span> and
+2.06 in. for <span class="math inline">\({\Delta }_a\)</span> are closer
+to the integrated values of deflection (2.39 in. for <span
+class="math inline">\({\Delta }_{i,L}\)</span> and 2.14 in. for <span
+class="math inline">\({\Delta }_a\)</span>) but now underestimate
+deflection by 3 to 4%. Compare this with the estimate using a parabolic
+curvature, where deflections are overestimated by about 20 to 23%.</p>
+<p>Further investigation with this type of tendon profile is needed for
+different ratios of service load to cracking load before definite
+recommendations can be made regarding the merits of each
+approximation.</p>
+<img src="image14.png" style="width:5.63in;height:3.91in"
+alt="image" /><strong></strong>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Aside 1: Location of Critical Section for Deflection Calculation</button>
+<div class="content">
+<p><strong>Aside 1: Location of Critical Section for Deflection
+Calculation</strong></p>
+<p>Determine the location for the maximum value of total stress
+<em>f<span class="math inline">\({}_{b}\)</span></em> at the bottom
+(precompressed) tensile face of the prestressed beam (refer to Fig.
+A2).</p>
+<p>The angle of inclination <em>q</em> of the prestressing force given
+by <span class="math display">\[\theta
+=2\left(e_{g,c}-e_{g,end}\right)/\ell\]</span> is used to obtain the
+eccentricity <em>e<span
+class="math inline">\({}_{g}\)</span></em>(<em>x</em>) along the beam
+span</p>
+<p><span class="math inline">\(e_g\left(x\right)=e_{g,end}+\)</span>
+<span class="math inline">\(\theta x\)</span> for <span
+class="math inline">\(x\le \ell /2\)</span></p>
+<p>For the bottom stress <em>f<span
+class="math inline">\({}_{b}\)</span></em> in the section for the
+prestress force plus dead and live load (where compression is negative
+and tension is positive) <span
+class="math display">\[f_b\left(x\right)=-\frac{P_e}{A_g}-\frac{P_ee_g\left(x\right)y_{bot}}{I_g}+\frac{M(x)y_{bot}}{I_g}\]</span>
+where <span class="math inline">\(M\left(x\right)=4M_a\left[\left(x/\ell
+\right)-{(x/\ell )}^2\right]\)</span> and <span
+class="math inline">\(M_a=w{\ell }^2/8\)</span> at midspan</p>
+<p>Setting <span
+class="math inline">\(\frac{d}{dx}f_b\left(x\right)=0\)</span>
+identifies the location of maximum stress for <span
+class="math inline">\(f_b\)</span>, giving <span
+class="math display">\[x/\ell =0.5-P_e\theta \ \ell
+/\left(8M_a\right)=0.5-P_e\left(e_{g,c}-e_{g,end}\right)/\left(4M_a\right)\]</span>
+<span class="math inline">\(x/\ell =0.39\)</span> for <span
+class="math inline">\(P_e=297.4\)</span> kip, <span
+class="math inline">\(\theta =0.02005\)</span> rads, <span
+class="math inline">\(\ell =70\)</span> ft, and <span
+class="math inline">\(M_a=5718.3\)</span> kip-in.</p>
+<p>Similarly, the location for the maximum value of <span
+class="math inline">\(M\left(x\right)/M_{cr}\left(x\right)\)</span>
+occurs at</p>
+<p><span class="math inline">\(x/\ell =\sqrt{{\omega }^2+\omega
+}-\omega\)</span>, with <span class="math display">\[\omega
+=\frac{e_{g,end}+I_g/\left(A_gy_{bot}\right)+f_rI_g/\left(P_ey_{bot}\right)}{2\left(e_{g,c}-e_{g,end}\right)}=0.6361\]</span>
+to give <span class="math inline">\(x/\ell =0.384\)</span> which is only
+a few percent different than the location for the maximum stress value
+<em>f<span class="math inline">\({}_{b}\)</span></em>.</p>
+</div>
+
+<button type="button" class="collapsible">Show/Hide: Aside 2: PCI Bilinear Load-Deflection Response Revisited</button>
+<div class="content">
+<p><strong>Aside 2: PCI Bilinear Load-Deflection Response
+Revisited</strong></p>
+<p>Example 5.8.3.1 from the PCI Design Handbook<span
+class="math inline">\({}^{12}\)</span> computes deflection using a
+bilinear moment-deflection relationship as shown in Fig. A7. The PCI
+solution starts off by comparing the rupture modulus <em>f<span
+class="math inline">\({}_{r}\)</span></em> with the computed stress at
+the bottom face <em>f<span class="math inline">\({}_{b}\)</span></em>
+for the moment at <span class="math inline">\(0.4\ell\)</span> (where
+tensile stresses for <em>f<span
+class="math inline">\({}_{b}\)</span></em> are assumed to be greatest as
+discussed earlier). However, deflection is calculated at midspan
+(equivalent to using an approximation for the cracking moment at <span
+class="math inline">\(0.5\ell\)</span> as shown in Fig. A7).</p>
+<p><img src="image15.png" style="width:4.01in;height:3.62in"
+alt="image" /></p>
+<p>Figure 7: Calculation of immediate deflection from live load using the
+PCI bilinear load-deflection response</p>
+<p>Stresses are computed at the bottom face for <span
+class="math inline">\(x=0.4\ell\)</span>. For the prestress load
+only:</p>
+<p><span class="math inline">\(f_{pe}\left(0.4\ell \right)=3710.75\
+\mathrm{psi\ (C)}\)</span> from before</p>
+<p>For prestress plus dead and live loads (total stress): <span
+class="math display">\[f_{b,tot}\left(0.4\ell
+\right)={-f}_{pe}\left(0.4\ell \right)+\frac{M_D\left(0.4\ell
+\right)y_{bot}}{I_g}+\frac{M_L\left(0.4\ell
+\right)y_{bot}}{I_g}=-3710.75+\left(\frac{3513.9\left(17.15\right)}{20,985}+\frac{1975.7\left(17.15\right)}{20,985}\right)\times
+1000=-3710.75+2871.74+1614.64=775.63\ \mathrm{psi\ (T)}\gt f_r=530\
+\mathrm{psi}\]</span> This beam is a Class T component since the total
+tensile stress <span class="math inline">\(f_{b,tot}=775.63\)</span> psi
+(T) at the bottom face (for the prestress plus dead and live loads) is
+greater than <span class="math inline">\(f_r\)</span> and less than
+<span class="math inline">\(12\sqrt{f_c&#39;}=848.5\)</span> psi. The
+stress <span class="math inline">\(f_{b,p+D}\)</span> from prestress
+plus dead load, which is equal to <span
+class="math inline">\(-3710.75+2871.74=839.01\ \mathrm{psi\
+(C)}\)</span>, indicates the beam is uncracked for dead load only. The
+tensile stress <span class="math inline">\(f_{b,L}\)</span> from the
+live load alone equals 1614.64 psi (T).</p>
+<p>That part of the live load <span
+class="math inline">\(w_{L1}\)</span> needed to cause cracking at <span
+class="math inline">\(0.4\ell\)</span> (for a bottom tensile stress of
+530 psi) corresponds to a computed bottom stress from live load <span
+class="math inline">\(f_{b,L1}=\mathrm{839.01+530.0=1369.01}\)</span>
+psi (T). This stress results from a portion of the total live load (280
+lb/ft) as follows. <span
+class="math display">\[w_{L1}=\frac{f_{b,L1}}{f_{b,L}}w_L=\frac{1369.01}{1614.64}\times
+280=237.40\ \mathrm{lb/ft}\]</span> with a corresponding part of the
+live load moment <span class="math inline">\(M_{L1}\)</span> at midspan.
+<span class="math display">\[M_{L1}(0.5\ell )=\frac{w_{L1}{\ell
+}^2}{8}=\frac{237.40{\left(70\right)}^2}{8}\times
+\frac{12}{1000}=1744.9\ \mathrm{k-in.}\]</span> The stress <span
+class="math inline">\(f_{b,L2}=f_{b,L}-f_{b,L1}\)</span> from that part
+of the live load <span class="math inline">\(w_{L2}\)</span> after
+cracking equals <span
+class="math inline">\(1614.64-1369.01=245.63\)</span> psi (or <span
+class="math inline">\(f_{b,tot}-f_r=775.63-530=245.63\)</span> psi).
+Similarly <span
+class="math display">\[w_{L2}=\frac{f_{b,L2}}{f_{b,L}}w_L=\frac{245.63}{1614.64}\times
+280=42.60\ \mathrm{lb/ft}\]</span> <span
+class="math display">\[M_{L2}(0.5\ell )=\frac{w_{L2}{\ell
+}^2}{8}=\frac{42.60{\left(70\right)}^2}{8}\times \frac{12}{1000}=313.1\
+\mathrm{k-in.}\]</span> Deflection is computed using the midspan (<span
+class="math inline">\(0.5\ell\)</span>) value of <span
+class="math inline">\(d_p=20.75\)</span> in. for <span
+class="math inline">\({\rho }_p=\)</span> <span
+class="math inline">\(1.836/\left(96\times
+20.75\right)=0.00092\)</span>, to give <span
+class="math inline">\(I_{cr}=n_pA_{ps}{d_p}^2\left(1-1.6\sqrt{n_p{\rho
+}_p}\right)=4822\)</span> in.<span
+class="math inline">\({}^{4}\)</span></p>
+<p>The deflection from live load up to cracking <span
+class="math inline">\({\Delta }_g\)</span> (corresponding to deflection
+from the gross (uncracked) response) <span
+class="math display">\[{\Delta }_g=\frac{5}{48}\frac{M_{L1}{\ell
+}^2}{E_cI_g}=\frac{5}{48}\frac{\left(1744.9\right){\left(70\times
+12\right)}^2}{\left(4074\right)\left(20,985\right)}=1.50\
+\mathrm{in.}\]</span> and the deflection from live load after cracking
+<span class="math inline">\({\Delta }_{cr}\)</span> (corresponding to
+deflection of the cracked response) <span class="math display">\[{\Delta
+}_{cr}=\frac{5}{48}\frac{M_{L2}{\ell
+}^2}{E_cI_{cr}}=\frac{5}{48}\frac{\left(313.1\right){\left(70\times
+12\right)}^2}{\left(4074\right)\left(4822\right)}=1.17\
+\mathrm{in.}\]</span> Total live load deflection <span
+class="math inline">\({\Delta }_{i,L}={\Delta }_g+{\Delta
+}_{cr}=1.50+1.17=2.67\)</span> in.</p>
+<p>The procedure followed above for computing deflection from live load
+is equivalent to using a <em>fictitious</em> cracking moment at midspan
+based on the cracking moment computed at <span
+class="math inline">\(0.4\ell\)</span> divided by 0.96 (assuming a
+parabolic curve for distribution of the moment along the span) as shown
+in Fig. A7.</p>
+<p><span class="math inline">\(M_{cr}\left(0.4\ell
+\right)=5189.0\)</span> k-in. from before, and <span
+class="math display">\[M_{cr}\left(0.5\ell \right)\approx
+\frac{M_{cr}\left(0.4\ell \right)}{0.96}=\frac{5189.0}{0.96}=5405.2\
+\mathrm{k-in.}\]</span> to give</p>
+<p><span class="math inline">\(M_{L1}=M_{cr}\left(0.5\ell
+\right)-M_D\left(0.5\ell \right)=5405.2-3660.3=1744.9\)</span> k-in. as
+before, and</p>
+<p><span class="math inline">\(M_{L2}=M_{D+L}\left(0.5\ell
+\right)-M_{cr}\left(0.5\ell \right)=5718.3-5405.2=313.1\)</span> k-in.
+as before.</p>
+<p>Computed values of deflection are slightly different from those in
+the PCI example<span class="math inline">\({}^{12}\)</span> because of
+differences in the value used for <span
+class="math inline">\(E_c\)</span> and roundoff error.</p>
+</div>
 </div>
 
 <button type="button" class="collapsible">Show/Hide: Concrete design properties</button>
