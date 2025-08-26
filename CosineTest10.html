@@ -253,6 +253,7 @@
       word-wrap: break-word;
       box-sizing: border-box;
       font-family: inherit;
+      font-size: 1em;
       margin-top: 1em;
       margin-bottom: 1em;
     }
@@ -260,6 +261,7 @@
       white-space: normal !important;
       font-family: inherit;
       line-height: 1.2;
+      font-size: 1em;
     }
   </style>
   <script
@@ -1017,7 +1019,18 @@ document.querySelectorAll('.collapsible').forEach(btn => {
   });
 });
 
-// Image zoom logic (unchanged)
+// Image zoom: toggle zoom on click
+document.querySelectorAll('img').forEach(function(img) {
+  img.addEventListener('click', function() {
+    if (img.classList.contains('zoomed')) {
+      img.classList.remove('zoomed');
+      document.body.style.overflow = '';
+    } else {
+      img.classList.add('zoomed');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
 </script>
 </body>
 </html>
