@@ -70,8 +70,8 @@
       top: 50%;
       left: 50%;
       width: auto !important;
-      height: 90vh !important;
       max-width: 90vw !important;
+      max-height: 90vh !important;
       object-fit: contain;
       transform: translate(-50%, -50%);
       background: #fff;
@@ -356,7 +356,7 @@ document.querySelectorAll('img').forEach(function(img) {
       img.style.zIndex = 1000;
       img.style.position = 'relative';
 
-      // Closing logic: click anywhere closes
+      // Closing logic: click overlay, image, or ESC closes zoom
       function removeZoom(e) {
         img.classList.remove('zoomed');
         img.style.zIndex = '';
@@ -364,6 +364,7 @@ document.querySelectorAll('img').forEach(function(img) {
         document.body.style.overflow = '';
         if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
         overlay.removeEventListener('click', removeZoom);
+        img.removeEventListener('click', removeZoom);
         window.removeEventListener('keydown', escListener);
       }
       // Also allow ESC to close zoom
@@ -373,6 +374,7 @@ document.querySelectorAll('img').forEach(function(img) {
         }
       }
       overlay.addEventListener('click', removeZoom);
+      img.addEventListener('click', removeZoom);
       window.addEventListener('keydown', escListener);
     }
   });
