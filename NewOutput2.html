@@ -242,16 +242,20 @@
 
     /* MathJax equation wrapping */
     .MathJax_Display, .mjx-block {
+      display: block;
       white-space: normal !important;
       overflow-wrap: break-word;
       word-wrap: break-word;
       width: 100% !important;
+      max-width: none !important;
+      margin: 1em 0;
       box-sizing: border-box;
       font-family: inherit;
     }
     .MathJax, .math.inline {
       white-space: normal !important;
       font-family: inherit;
+      line-height: 1.2;
     }
   </style>
   <script
