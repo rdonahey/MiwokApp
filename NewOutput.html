@@ -332,21 +332,48 @@ document.querySelectorAll('.collapsible').forEach(function(btn) {
   });
 });
 
-// Image zoom
+// Image zoom with overlay and robust closing
 document.querySelectorAll('img').forEach(function(img) {
-  img.addEventListener('click', function() {
+  img.addEventListener('click', function(event) {
     if (!img.classList.contains('zoomed')) {
       img.classList.add('zoomed');
       document.body.style.overflow = 'hidden';
-      // Remove zoom on click outside or on image
+
+      // Create a transparent overlay
+      var overlay = document.createElement('div');
+      overlay.style.position = 'fixed';
+      overlay.style.top = 0;
+      overlay.style.left = 0;
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.zIndex = 999;
+      overlay.style.background = 'rgba(0,0,0,0.12)';
+      overlay.style.cursor = 'zoom-out';
+      overlay.setAttribute('id', 'zoom-overlay');
+      document.body.appendChild(overlay);
+
+      // Raise zoomed image above overlay
+      img.style.zIndex = 1000;
+      img.style.position = 'relative';
+
+      // Closing logic: click anywhere closes
       function removeZoom(e) {
-        if (e.target === img) {
-          img.classList.remove('zoomed');
-          document.body.style.overflow = '';
-          window.removeEventListener('click', removeZoom, true);
+        img.classList.remove('zoomed');
+        img.style.zIndex = '';
+        img.style.position = '';
+        document.body.style.overflow = '';
+        if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+        overlay.removeEventListener('click', removeZoom);
+        window.removeEventListener('keydown', escListener);
+      }
+      // Also allow ESC to close zoom
+      function escListener(e) {
+        if (e.key === 'Escape') {
+          removeZoom();
         }
       }
-      window.addEventListener('click', removeZoom, true);
+      overlay.addEventListener('click', removeZoom);
+      window.addEventListener('keydown', escListener);
     }
   });
 });
